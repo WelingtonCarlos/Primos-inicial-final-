@@ -16,7 +16,7 @@ function Primos($inicial, $final)
     for ($i = $inicial; $i <= $final; $i++) {
         $cont = 0;
         for ($j = 1; $j <= $i; $j++) {
-            if ($i % $j == 0) {
+            if ($i % $j == 0) { // é realizada a divisão entre o valor de i e todos os números seguintes até chegar no valor de $final
                 $cont++;
             }
         }
