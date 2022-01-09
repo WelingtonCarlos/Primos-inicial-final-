@@ -41,10 +41,10 @@ function Primos($inicial, $final) {
 	    echo "Encontrados ".count($numeroPrimo)." números numeroPrimo, são eles: ".implode(", ", $numeroPrimo)."<br>";
 	}
 
-	elseif ($inicial > $final) {
+	elseif ($inicial > $final) { // se o valor inicial foi maior que o do final calcularemos ao contrário.
 
 		$inicial--;
-    	$final++;
+    		$final++;
 		
 		for ($i = $final; $i <= $inicial; $i++) {
 	        $cont = 0;
